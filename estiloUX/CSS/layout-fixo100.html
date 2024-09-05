@@ -1,60 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-        }
-        .quadrado1 {
-            height: 20%;
-            width: 100%;
-            padding: 20px;
-            background-color: #ff7f50;
-            box-sizing: border-box;
-        }
-        .tudo {
-            display: flex;
-            height: 80%;
-            width: 100%;
-        }
-        .quadrado2 {
-            height: 100%;
-            width: 30%;
-            padding: 20px;
-            background-color: #dc143c;
-            box-sizing: border-box;
-        }
-        .quadrado3 {
-            height: 100%;
-            width: 70%;
-            padding: 20px;
-            background-color: #ffa07a;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
+h1 {
+    font-family: Verdana, sans-serif;
+    font-si/* reset de propriedades do css */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <div class="quadrado1">
-       
-    </div>
+html, body {
+    height: 100%;
+    border: 2px solid red;
+}
 
-    <div class="tudo">
-        <div class="quadrado2">
-           
-        </div>
-        <div class="quadrado3">
-           
-        </div>
-    </div>
+body {
+    background-color: #EFEFEF;
+    border: 2px solid blue;
+}
 
-</body>
-</html>
+/******************** HEADER *********************/
+header, footer {
+    width: 100%;
+    height: 10%;
+    background-color: #727272;
+}
+
+/* caixa para centralizar o conteúdo */
+.layout-grid {
+    width: 100%;
+    height: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    /* border: 3px solid salmon; */
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+ze: 26px;
+    font-weight: 100;
+    color: white;
+    /* border: 3px solid white; */
+}
+
+.ux {
+    font-size: 30px;
+    margin-left: 3px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    /* border: 3px solid white; */
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 80px;
+    color: #E8E8E8;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    transition: background-color 0.4s;
+}
+
+nav a:hover {
+    /* margin-left: 10px;
+    margin-bottom: 10px; */
+    background-color: rgba(232, 232, 232, 0.5);
+}
+
+
+/******************** Main *********************/
+main {
+    width: 100%;
+    height: 80%;
+    border: 3px solid red;
+}
+/* div com a class main-flex 
+    flex container
+*/
+.main-flex {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #FC9696;
+    border: 2px solid green;
+}
+
+.harmonia {
+    /* margin: 10px; */
+    width: 700px;
+    height: 100%;
+    border: 2px solid blue;
+    background-color: #388D04;
+}
+
+aside {
+    /* margin: 10px; */
+    width: 250px;
+    height: 100%;
+
+    background-color: #388D04;
+    border: 2px solid purple;
+}
